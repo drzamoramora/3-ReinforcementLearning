@@ -1,0 +1,38 @@
+digraph mc1 {
+	rankdir=UD;
+	size="10,20";
+	
+	subgraph s0 {
+		rank="same";
+		node [shape=doublecircle] L S;
+	}
+
+		L:n -> S:n;
+		S:n -> L:n;		
+		L:w -> L:nw;
+		S:e -> S:ne;
+
+
+	subgraph s1 {
+		 rank="same";
+		 node [shape=square] saco jacket shorts bikini jeans;		 
+		 edge[style=invisible, dir=none] saco -> jacket -> shorts -> bikini -> jeans;
+
+	}
+
+
+	edge[style=dashed]
+		 L -> saco;
+		 L -> jacket;
+		 L -> shorts;
+		 L -> bikini;
+		 L -> jeans;
+		 
+		 S -> saco;
+		 S -> jacket;
+		 S -> shorts;
+		 S -> bikini;
+		 S -> jeans;
+
+
+}
