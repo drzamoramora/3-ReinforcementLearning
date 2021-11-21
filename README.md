@@ -1,1 +1,1 @@
-# AI03-MachineLearningAplicado
+# Aprendizaje por Refuerzo y Modelos Generativos
